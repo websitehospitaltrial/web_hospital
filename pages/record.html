@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>症状诊断</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="recss.css" >
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="body">
+	<div>
+		<br /><p style="text-align: right; font-size: 13px;">您好！感谢登录使用</p>
+	</div>
+	
+<div class="container container-fluid">
+    <div class="left col-sm-12 col-md-12 col-md-12 col-xs-12">
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active"><a href="#case" data-toggle="tab">症状诊断</a></li>
+            <li><a href="#like_dislike" data-toggle="tab">喜恶</a></li>
+            <li><a href="#period" data-toggle="tab">经带</a></li>
+			<li><a href="#time" data-toggle="tab">发病时间</a></li>
+			<li><a href="#tendency" data-toggle="tab">病情趋势</a></li>
+            <li><a href="#excretion" data-toggle="tab">二便</a></li>
+            <li><a href="#tongue" data-toggle="tab">舌像</a></li>
+            <li><a href="#pulse" data-toggle="tab">脉象</a></li>
+        </ul>
+
+<!--病症-->
+        <div id="myTabContent" class="tab-content ">
+            <div class="tab-pane fade in active" id="case">
+               <div class="row">
+                   <div class=" col-sm-4 col-md-4 col-md-4 col-xs-4 position">
+                        <ul class="list-group">
+                            <li class="list-group-item" id="title_head"><a href="#head_part" >头</a></li>
+                            <li class="list-group-item" id="title_five"><a href="#five_sense_organs">五官</a></li>
+                            <li class="list-group-item" id="title_oral"><a href="#oral">口腔</a></li>
+                            <li class="list-group-item" id="title_uplimb"><a href="#upper_limb" >上肢</a></li>
+                            <li class="list-group-item" id="title_organ"><a href="#inner_organ" >脏腑</a></li>
+                            <li class="list-group-item" id="title_comm"><a href="#common" >常用</a></li>
+                            <li class="list-group-item" id="title_lolimb"><a href="#lower_limb" >下肢</a></li>
+                            <li class="list-group-item" id="title_non"><a href="#none">无</a></li>
+                        </ul>
+                   </div>
+
+<!--详细部位-->
+                   <div class=" col-sm-4 col-md-4 col-md-4 col-xs-4 detail_part">
+                       <ul class="list-group active" id="head_part">
+                           <li class="list-group-item tab-pane"><a href="#table_symptom" >前额</a></li>
+                           <li class="list-group-item tab-pane"><a href="#table_symptom" >左侧</a></li>
+                           <li class="list-group-item tab-pane"><a href="#table_symptom" >右侧</a></li>
+                           <li class="list-group-item tab-pane"><a href="#table_symptom" >头顶</a></li>
+                           <li class="list-group-item tab-pane"><a href="#table_symptom" >脑后</a></li>
+                       </ul>
+
+
+                       <ul class="list-group" id="five_sense_organs">
+                           <li class="list-group-item"><a href="#table_symptom" >面</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >眼</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >耳</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >鼻</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >唇</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >口</a></li>
+                       </ul>
+
+
+                       <ul class="list-group" id="oral">
+                           <li class="list-group-item"><a href="#table_symptom" >牙</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >牙龈</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >舌</a></li>
+                       </ul>
+
+
+                       <ul class="list-group" id="upper_limb">
+                           <li class="list-group-item"><a href="#table_symptom" >左手</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >右手</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >左小臂</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >右小臂</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >左手肘</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >右手肘</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >左大臂</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >右大臂</a></li>
+                       </ul>
+
+                       <ul class="list-group" id="inner_organ">
+                           <li class="list-group-item"><a href="#table_symptom" >心</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >肝</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >脾</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >肺</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >肾</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >胆</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >胃</a></li>
+                       </ul>
+
+                       <ul class="list-group" id="common">
+                           <li class="list-group-item"><a href="#table_symptom" >全身</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >腰</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >背</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >小腹</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >两肋</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >胸</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >四肢</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >双下肢</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >颈项</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >嗳气</a></li>
+
+                       </ul>
+
+                       <ul class="list-group" id="lower_limb">
+                           <li class="list-group-item"><a href="#table_symptom" >足</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >足跟</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >左足跟</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >右足跟</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >左足内踝</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >右足内踝</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >会阴</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >左股</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >右股</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >左膝</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >右膝</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >左腿</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >右腿</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >左脚</a></li>
+                           <li class="list-group-item"><a href="#table_symptom" >右脚</a></li>
+                       </ul>
+
+                       <ul class="list-group" id="none">
+                           <li class="list-group-item"><a href="#table_symptom" >无</a></li>
+                       </ul>
+
+                   </div>
+
+<!--详细症状-->
+                   <div class=" col-sm-4 col-md-4 col-md-4 col-xs-4 detail_table_symptom">
+
+                       <ul class="list-group active">
+                           <li class="list-group-item tab-pane detail" id="pain"><a href="#table_detail" >痛</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >肿胀</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >酸</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >麻</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >痒</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >无力</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >疲倦乏力</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >僵硬</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >沉重</a></li>
+                           <li class="list-group-item tab-pane detail" id="sweat"><a href="#table_detail" >汗</a></li>
+                           <li class="list-group-item tab-pane detail" id="skin"><a href="#table_detail" >皮肤</a></li>
+                           <li class="list-group-item tab-pane detail" id="injury"><a href="#table_detail" >外伤</a></li>
+                           <li class="list-group-item tab-pane detail" id="chills_fever"><a href="#table_detail" >寒热</a></li>
+                           <li class="list-group-item tab-pane detail" id="na"><a href="#table_detail" >纳</a></li>
+                           <li class="list-group-item tab-pane detail" id="mouth"><a href="#table_detail" >口</a></li>
+                           <li class="list-group-item tab-pane detail" id="sleep"><a href="#table_detail" >寐</a></li>
+                           <li class="list-group-item tab-pane detail" id="cough"><a href="#table_detail" >咳嗽</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >心悸</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >头晕</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >烧心</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >气短</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >胸闷</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >打嗝</a></li>
+                           <li class="list-group-item tab-pane detail"><a href="#table_detail" >无</a></li>
+                       </ul>
+                   </div>
+
+<!--row-->
+               </div>
+<!--case-->
+            </div>
+
+
+<!--喜恶-->
+            <div class="tab-pane fade" id="like_dislike">
+                <div class=" col-sm-4 col-md-4 col-md-4 col-xs-4">
+                    <ul class="list-group title_like">
+                        <li class="list-group-item" id="title_chill_fever_like"><a href="#chills_fever_like" data-target="#chills_fever_like">寒热</a></li>
+                        <li class="list-group-item" id="title_eating"><a href="#eating_like" data-target="#eating_like">进食</a></li>
+                        <li class="list-group-item" id="title_drinking"><a href="#drinking_like" data-target="#drinking_like">饮水</a></li>
+                        <li class="list-group-item" id="title_an"><a href="#an_like" data-target="#an_like">按</a></li>
+                    </ul>
+                </div>
+
+                <div class=" col-sm-4 col-md-4 col-md-4 col-xs-4 type_like">
+                    <ul class="list-group active" id="chills_fever_like">
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >喜温</a></li>
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >喜凉</a></li>
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >畏寒</a></li>
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >畏热</a></li>
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >正常</a></li>
+                    </ul>
+                    <ul class="list-group active" id="eating_like">
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >喜辣</a></li>
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >喜咸</a></li>
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >正常</a></li>
+                    </ul>
+                    <ul class="list-group active" id="drinking_like">
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >欲饮温</a></li>
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >欲饮凉</a></li>
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >不欲饮</a></li>
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >正常</a></li>
+                    </ul>
+                    <ul class="list-group active" id="an_like">
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >喜按</a></li>
+                        <li class="list-group-item tab-pane detail"><a href="#table_detail" >正常</a></li>
+                    </ul>
+                </div>
+            </div>
+
+<!--经带-->
+            <div class="tab-pane fade" id="period">
+<!--				月经-->
+				<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+					<p style="text-align: center;">月经</p>
+
+					<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+						<ul class="list-group" id="title2_yuejing">
+							<li class="list-group-item" id="title2_volume_yuejing"><a href="#title3_volume_yuejing">经量</a></li>
+							<li class="list-group-item" id="title2_color_yuejing"><a href="#title3_color_yuejing">颜色</a></li>
+							<li class="list-group-item" id="title2_texture_yuejing"><a href="#title3_texture_yuejing">质地</a></li>
+							<li class="list-group-item" id="title2_complication_yuejing"><a href="#title3_complication_yuejing">伴随症状</a></li>
+						</ul>
+					</div>
+
+					<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+						<ul class="list-group active" id="title3_volume_yuejing">
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >多</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >少</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >先多后少</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >先少后多</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >适中</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >偏多</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >偏少</a></li>
+						</ul>
+						<ul class="list-group active" id="title3_color_yuejing">
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >色暗</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >色红</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >正常</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >色鲜红</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >色暗红</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >色深红</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >色紫暗</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >咖啡样</a></li>
+						</ul>
+						<ul class="list-group active" id="title3_texture_yuejing">
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >血块多</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >血块少</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >无血块</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >血块正常</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >血块质稀</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >血块质稠</a></li>
+						</ul>
+						<ul class="list-group active" id="title3_complication_yuejing">
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >痛经</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >腰酸</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >胸胀</a></li>
+						</ul>
+					</div>
+				</div>
+<!--白带-->
+				<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+					<p style="text-align: center;">白带</p>
+						<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+							<ul class="list-group" id="title2_baidai">
+								<li class="list-group-item" id="title2_volume_baidai"><a href="#title3_volume_baidai">量</a></li>
+								<li class="list-group-item" id="title2_color_baidai"><a href="#title3_color_baidai">色</a></li>
+								<li class="list-group-item" id="title2_texture_baidai"><a href="#title3_texture_baidai">质</a></li>
+								<li class="list-group-item" id="title2_smell_baidai"><a href="#title3_smell_baidai">味</a></li>
+							</ul>
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+
+							<ul class="list-group active" id="title3_volume_baidai">
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >量多</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >量少</a></li>
+							</ul>
+
+							<ul class="list-group active" id="title3_color_baidai">
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >白</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >黄</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >薄黄</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >赤白</a></li>
+							</ul>
+
+							<ul class="list-group active" id="title3_texture_baidai">
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >稀</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >稠</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >黏</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >质</a></li>
+							</ul>
+
+							<ul class="list-group active" id="title3_smell_baidai">
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >臭秽</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >酸臭</a></li>
+							</ul>
+						</div>
+				</div>
+            </div>
+
+<!--发病时间			-->
+			<div class="tab-pane fade" id="time">
+				<div class=" col-sm-4 col-md-4 col-md-4 col-xs-4">
+					<ul class="list-group active">
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">晨起</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">餐后</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">空腹</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">经前</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">经后</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">月经期</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">经后</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">运动后</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">劳累前</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">偶尔</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">持续</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">间作</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">睡前</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">早</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">夜</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">正常</a></li>
+					</ul>
+				</div>
+			</div>
+
+<!--病情趋势-->
+			<div class="tab-pane fade" id="tendency">
+				<div class=" col-sm-4 col-md-4 col-md-4 col-xs-4">
+					<ul class="list-group active">
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">缓解</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">加重</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">已消除</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">尤甚</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail">正常</a></li>
+					</ul>
+				</div>
+			</div>
+
+<!--二便-->
+            <div class="tab-pane fade" id="excretion">
+
+<!--小便-->
+				<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+
+					<p style="text-align: center;padding-top: 10px;">小便</p>
+					<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+							<ul class="list-group" id="title2_urine">
+								<li class="list-group-item" id="title1_volume_urine"><a href="#title2_volume_urine">量</a></li>
+								<li class="list-group-item" id="title1_feel_urine"><a href="#title2_feel_urine">小便感受</a></li>
+								<li class="list-group-item" id="title1_color_urine"><a href="#title2_color_urine">小便颜色</a></li>
+								<li class="list-group-item" id="title1_texture_urine"><a href="#title2_texture_urine">质</a></li>
+								<li class="list-group-item" id="title1_smell_urine"><a href="#title2_smell_urine">味</a></li>
+							</ul>
+						</div>
+
+					<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+						<ul class="list-group active" id="title2_volume_urine">
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >尿频</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >尿少</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >尿多</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >无尿</a></li>
+						</ul>
+
+						<ul class="list-group active" id="title2_color_urine">
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >色红</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >色淡</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >正常</a></li>
+						</ul>
+
+						<ul class="list-group active" id="title2_feel_urine">
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >排尿无力</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >尿疼痛</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >尿不尽</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >尿热</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >尿清长</a></li>
+						</ul>
+
+						<ul class="list-group active" id="title2_texture_urine">
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >浑浊</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >白浊</a></li>
+						</ul>
+
+						<ul class="list-group active" id="title2_smell_urine">
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >大</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >重</a></li>
+							<li class="list-group-item tab-pane detail"><a href="#table_detail" >刺鼻</a></li>
+						</ul>
+					</div>
+				</div>
+
+<!--大便-->
+				<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+					<p style="text-align: center;padding-top: 10px;">大便</p>
+
+						<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+							<ul class="list-group" id="title1_faeces">
+								<li class="list-group-item" id="title1_texture_faeces"><a href="#title2_texture_faeces">质</a></li>
+								<li class="list-group-item" id="title1_color_faeces"><a href="#title2_color_faeces">色</a></li>
+								<li class="list-group-item" id="title1_volume_faeces"><a href="#title2_volume_faeces">量</a></li>
+								<li class="list-group-item" id="title1_smell_faeces"><a href="#title2_smell_faeces">味</a></li>
+								<li class="list-group-item" id="title1_times_faeces"><a href="#title2_times_faeces">大便次数</a></li>
+							</ul>
+						</div>
+
+						<div class="col-sm-6 col-md-6 col-md-6 col-xs-6">
+							<ul class="list-group active" id="title2_texture_faeces">
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >干</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >黏</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >溏</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >稀</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >不成形</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >时干时稀</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >时调时稀</a></li>
+							</ul>
+
+							<ul class="list-group active" id="title2_color_faeces">
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >色黑</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >色青暗</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >柏油样便</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >赤白相间</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >色鲜红</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >色暗紫</a></li>
+							</ul>
+
+							<ul class="list-group active" id="title2_volume_faeces">
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >多</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >少</a></li>
+							</ul>
+
+							<ul class="list-group active" id="title2_smell_faeces">
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >臭秽</a></li>
+							</ul>
+
+							<ul class="list-group active" id="title2_times_faeces">
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >1次/天</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >1-2次/天</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >1-3次/天</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >2-3次/天</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >2-3次/天</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >2-5次/天</a></li>
+								<li class="list-group-item tab-pane detail"><a href="#table_detail" >1次/1-3天</a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+
+
+<!--舌像-->
+            <div class="tab-pane fade" id="tongue">
+                <div class=" col-sm-4 col-md-4 col-md-4 col-xs-4">
+                    <ul class="list-group">
+                        <li class="list-group-item" id="title1_texture_tongue"><a href="#title2_texture_tongue" data-target="#title2_texture_tongue">舌质</a></li>
+                        <li class="list-group-item" id="title1_coated_tongue"><a href="#title2_coated_tongue" data-target="#title2_coated_tongue">舌苔</a></li>
+                       </ul>
+                </div>
+
+                <div class=" col-sm-4 col-md-4 col-md-4 col-xs-4 title_like">
+                    <ul class="list-group" id="title2_texture_tongue">
+                        <li class="list-group-item" id="title_color_tongue_texture"><a href="#title3_type_position_1">舌色</a></li>
+                        <li class="list-group-item" id="title_shape_tongue"><a href="#title3_type_shape" >舌形</a></li>
+                        <li class="list-group-item" id="title_condition_tongue"><a href="#title3_type_condition">舌态</a></li>
+                    </ul>
+                    <ul class="list-group" id="title2_coated_tongue">
+                        <li class="list-group-item" id="title_color_tongue_coated"><a href="#title3_type_position_2">舌色（苔质）</a></li>
+						<li class="list-group-item" id="title_sublingua_vessel_coated"><a href="#title3_sublingua_vessel_coated">舌下脉络</a></li>
+						<li class="list-group-item" id="title_texture_tongue_coated"><a href="#title3_texture_tongue_coated">苔质</a></li>
+                       </ul>
+                </div>
+
+                <div class=" col-sm-4 col-md-4 col-md-4 col-xs-4 type_like">
+                    <ul class="list-group" id="title3_type_position_1">
+                        <li class="list-group-item tab-pane detail" id="title_tip_tongue_1"><a href="#tip_tongue">舌尖</a></li>
+                        <li class="list-group-item tab-pane detail" id="title_mid_tongue_1"><a href="#mid_tongue">舌中部</a></li>
+                        <li class="list-group-item tab-pane detail" id="title_side_tongue_1"><a href="#side_tongue">舌边</a></li>
+                        <li class="list-group-item tab-pane detail" id="title_root_tongue_1"><a href="#root_tongue">舌根部</a></li>
+                    </ul>
+                    <ul class="list-group" id="title3_type_position_2">
+                        <li class="list-group-item tab-pane detail" id="title_tip_tongue_2"><a href="#tip_tongue">舌尖</a></li>
+                        <li class="list-group-item tab-pane detail" id="title_mid_tongue_2"><a href="#mid_tongue">舌中部</a></li>
+                        <li class="list-group-item tab-pane detail" id="title_side_tongue_2"><a href="#side_tongue">舌边</a></li>
+                        <li class="list-group-item tab-pane detail" id="title_root_tongue_2"><a href="#root_tongue">舌根部</a></li>
+                    </ul>
+                    <ul class="list-group" id="title3_type_shape">
+                        <li class="list-group-item tab-pane detail" id="fat_tongue"><a href="#table_detail" >胖大</a></li>
+                        <li class="list-group-item tab-pane detail" id="thin_tongue"><a href="#table_detail" >瘦小</a></li>
+                        <li class="list-group-item tab-pane detail" id="marks_tongue"><a href="#table_detail" >边齿痕</a></li>
+                        <li class="list-group-item tab-pane detail" id="flaw_tongue"><a href="#table_detail" >少津</a></li>
+                        <li class="list-group-item tab-pane detail" id="less_saliva_tongue"><a href="#table_detail" >老</a></li>
+                        <li class="list-group-item tab-pane detail" id="old_tongue"><a href="#table_detail" >嫩</a></li>
+                        <li class="list-group-item tab-pane detail" id="fresh_tongue"><a href="#table_detail" >肿胀</a></li>
+                        <li class="list-group-item tab-pane detail" id="plumping_tongue"><a href="#table_detail" >点刺</a></li>
+                    </ul>
+                    <ul class="list-group" id="title3_type_condition">
+                        <li class="list-group-item tab-pane detail" id="hard_tongue"><a href="#table_detail" >强硬</a></li>
+                        <li class="list-group-item tab-pane detail" id="soft_tongue"><a href="#table_detail" >萎软</a></li>
+                        <li class="list-group-item tab-pane detail" id="trembling_tongue"><a href="#table_detail" >颤动</a></li>
+                        <li class="list-group-item tab-pane detail" id="askew_tongue"><a href="#table_detail" >歪斜</a></li>
+                        <li class="list-group-item tab-pane detail" id="spit_tongue"><a href="#table_detail" >吐弄</a></li>
+                        <li class="list-group-item tab-pane detail" id="short_tongue"><a href="#table_detail" >短缩</a></li>
+                    </ul>
+					<ul class="list-group" id="title3_sublingua_vessel_coated">
+						<li class="list-group-item tab-pane detail" id="yuzi_tongue"><a href="#table_detail" >瘀紫</a></li>
+						<li class="list-group-item tab-pane detail" id="cuda_tongue"><a href="#table_detail" >粗大</a></li>
+						<li class="list-group-item tab-pane detail" id="anzi_tongue"><a href="#table_detail" >暗紫</a></li>
+					</ul>
+					<ul class="list-group" id="title3_texture_tongue_coated">
+						<li class="list-group-item tab-pane detail" id="run_tongue"><a href="#table_detail" >润</a></li>
+						<li class="list-group-item tab-pane detail" id="zao_tongue"><a href="#table_detail" >燥</a></li>
+						<li class="list-group-item tab-pane detail" id="fu_tongue"><a href="#table_detail" >腐</a></li>
+						<li class="list-group-item tab-pane detail" id="boluo_tongue"><a href="#table_detail" >剥落</a></li>
+					</ul>
+                </div>
+            </div>
+
+<!--脉象-->
+            <div class="tab-pane fade" id="pulse">
+				<div class=" col-sm-2 col-md-2 col-md-2 col-xs-2">
+				    <ul class="list-group">
+				        <li class="list-group-item" id="title1_lefthand"><a href="#title2_pulse" data-target="#title2_pulse">左手</a></li>
+				        <li class="list-group-item" id="title1_righthand"><a href="#title2_pulse" data-target="#title2_pulse">右手</a></li>
+						<li class="list-group-item" id="title1_hands"><a href="#title2_pulse" data-target="#title2_pulse">手</a></li>
+				       </ul>
+				</div>
+				
+				<div class="col-sm-3 col-md-3 col-md-3 col-xs-3">
+					<ul class="list-group" id="title2_pulse">
+						<li class="list-group-item" id="title2_cun_pulse"><a href="#title3_pulse">寸脉</a></li>
+						<li class="list-group-item" id="title2_guan_pulse"><a href="#title3_pulse">关脉</a></li>
+						<li class="list-group-item" id="title2_chi_pulse"><a href="#title3_pulse">尺脉</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-sm-4 col-md-4 col-md-4 col-xs-4">
+					<ul class="list-group" id="title3_pulse">
+						<li class="list-group-item" id="title3_fu_pulse"><a href="#title4_fu">浮脉类</a></li>
+						<li class="list-group-item" id="title3_chen_pulse"><a href="#title4_chen">沉脉类</a></li>
+						<li class="list-group-item" id="title3_chi_pulse"><a href="#title4_chi">迟脉类</a></li>
+						<li class="list-group-item" id="title3_shu_pulse"><a href="#title4_shu">数脉类</a></li>
+						<li class="list-group-item" id="title3_xu_pulse"><a href="#title4_xu">虚脉类</a></li>
+						<li class="list-group-item" id="title3_shi_pulse"><a href="#title4_shi">实脉类</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-sm-3 col-md-3 col-md-3 col-xs-3">
+					<ul class="list-group active" id="title4_fu">
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >浮</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >洪</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >濡</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >散</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >芤</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >革</a></li>
+					</ul>
+					
+					<ul class="list-group active" id="title4_chen">
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >沉</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >伏</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >牢</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >弱</a></li>
+					</ul>
+					
+					<ul class="list-group active" id="title4_chi">
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >迟</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >缓</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >涩</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >结</a></li>
+					</ul>
+					
+					<ul class="list-group active" id="title4_shu">
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >数</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >促</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >疾</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >动</a></li>
+					</ul>
+					
+					<ul class="list-group active" id="title4_xu">
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >虚</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >微</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >细</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >代</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >短</a></li>
+					</ul>
+					
+					<ul class="list-group active" id="title4_shi">
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >实</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >滑</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >紧</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >长</a></li>
+						<li class="list-group-item tab-pane detail"><a href="#table_detail" >弦</a></li>
+					</ul>
+				</div>
+				
+            </div>
+
+
+        </div>
+
+<!--left-->
+    </div>
+
+
+    <div class="right col-sm-6 col-md-6 col-md-6 col-xs-6 table_detail container container-fluid">
+<!--路径-->
+        <legend>病情记录</legend>
+        
+        <div style="text-align: center;">
+        	<button type="button" class="btn btn-default" id="add" onclick="add()">添加</button>
+        	<button type="button" class="btn btn-default" onclick="">提交</button>
+        </div>
+		
+        <form class="form-horizontal">
+        <div id="div1" class="form-group">
+			
+        			<div>
+						<label>发病症状</label>
+        				<input type="text" class="form-control" id="sympotom_detail"/>
+        			</div>
+        			
+        			<div>
+						<label>症状归属</label>
+        				<input type="text" class="form-control" id="sympotom_classify"/>
+        			</div>
+        			
+        			<div>
+						<label>发病日期</label>
+        				<input type="date" class="form-control" id="date1" placeholder="年-月-日"/>
+        			</div>
+        			
+        			<div>
+						<label>发病趋势</label>
+        				<input type="text" class="form-control" id="trend"/>
+        			</div>
+        			
+        			<div>
+						<label>持续时间</label>
+        				<input type="text" class="form-control" id="continue_time"/>
+        			</div>
+        </div>
+        </form>
+
+<!--  right-->
+    </div>
+
+<!--container-->
+</div>
+
+
+
+<script src="record.js" type="text/javascript"></script>
+</body>
+
+
+
+</html>

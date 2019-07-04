@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能医疗系统_登录界面</title>
+    <script>
+        function login() {
+            if(1)//check函数，判断用户名密码是否匹配
+                window.location.href="data.html";
+            else
+                window.alert("账号与密码不匹配，请重新输入");
+        }
+    </script>
+</head>
+<link href="regist_login.css", rel="stylesheet",type="text/css">
+<body class="body1">
+<div class ="div3">
+    <form action="">
+        <p style="text-align: center; color: midnightblue"> 欢迎进入医疗辅助系统</p>
+        <label for="account">&emsp;&emsp;账号&emsp;&emsp;</label>
+        <input type="text" id="account" name="账号" placeholder="请输入账号"><br>
+
+        <label for="password">&emsp;&emsp;密码&emsp;&emsp;</label>
+        <input type="password" id="password" name="密码" placeholder="请输入密码"><br>
+    </form>
+    <button type="submit" onclick="login()">登录</button>
+    <button type="submit" onclick="window.location.href='page_register.html'">返回注册</button>
+</div>
+</body>
+</html>

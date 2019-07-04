@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能医疗辅助系统_注册界面</title>
+    <script>
+        function check(){
+            var zh=document.getElementById("account");
+            if(zh.value==""){
+                window.alert("账号不能为空，请输入账号");
+                return;
+            }
+            var x=document.getElementById("password");
+            var y=document.getElementById("r_password");
+            if(x.value == ""){
+                window.alert("密码不能为空");
+                return;
+            }
+            if(x.value != y.value){
+                window.alert("密码与确认密码不一致，请重新输入");
+                return;
+            }
+            window.location.href="page_login.html";
+        }
+        function bbb(){
+            window.location.href="page_login.html";
+        }
+    </script>
+</head>
+<!--csdn查询拼凑选手，鬼知道我写的是一些什么东西-->
+<link href="regist_login.css", rel="stylesheet",type="text/css">
+
+<body class="body1">
+<div class = "div1">
+    <form action="">
+        <p style="text-align: center; color: midnightblue"> 欢迎进入医疗辅助系统</p>
+        <label for="account">&emsp;&emsp;账号&emsp;&emsp;</label>
+        <input type="text" id="account" name="账号" placeholder="请输入账号"><br>
+
+        <label for="password">&emsp;&emsp;密码&emsp;&emsp;</label>
+        <input type="password" id="password" name="密码" placeholder="请输入密码"><br>
+
+        <label for="r_password">&emsp;&emsp;确定密码</label>
+        <input type="password" id="r_password" name="确认密码" placeholder="请确认密码"><br>
+
+        <label for="name">&emsp;&emsp;用户名&emsp;</label>
+        <input type="text" id="name" name="用户名" placeholder="请输入用户姓名"><br>
+
+        <label for="tel">&emsp;&emsp;手机号&emsp;</label>
+        <input type="text" id="tel" name="手机号" placeholder="请输入用户手机号"><br>
+    </form>
+
+    <form>
+        <label >姓名:</label>
+        <input type="text"></input>
+        <label>性别:</label>
+        <input type="text"></input>
+        <label>年龄:</label>
+        <input type="text"></input>
+    </form>
+
+    <button type="submit" onclick="check()">注册</button>
+    <button type="submit" onclick="bbb()">返回登录</button>
+</div>
+</body>
+</html>
